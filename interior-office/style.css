@@ -1,0 +1,254 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.side-container {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.caption {
+  font-size: 10px;
+  padding: 10px 7px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 7px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.menu {
+  font-size: 10px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+}
+
+li {
+  border-bottom: 1px solid black;
+  padding: 10px 7px;
+}
+
+.selected {
+  background-color: #eeeeee;
+}
+
+span {
+  font-size: 10px;
+}
+
+.tel {
+  padding: 10px 7px;
+}
+
+.address {
+  padding: 10px 7px;
+}
+
+.city {
+  font-weight: 600;
+}
+
+.language {
+  padding: 10px 7px;
+}
+
+.contents-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 2px solid black;
+}
+
+.left {
+  border-right: 2px solid black;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 7px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 12px;
+  padding: 10px 7px;
+  line-height: 1.2;
+}
+
+.home-right {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-container:first-child {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid black;
+}
+
+.image-container:last-child {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.square:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-top: 2px solid black;
+}
+
+.rectangle {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.rectangle:first-child {
+  grid-template-columns: 2fr 1fr;
+  border-bottom: 2px solid black;
+}
+
+.rectangle:last-child {
+  grid-template-columns: 1fr 2fr;
+}
+
+.big-rectangle {
+  width: 100%;
+  height: 100%;
+}
+
+.small-rectangle {
+  width: 100%;
+  height: 100%;
+}
+
+.smaller {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border-left: 2px solid black;
+}
+
+.tiny {
+  width: 100%;
+  height: 100%;
+}
+
+.tiny:first-child {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+.bigr {
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid black;
+}
+
+.service-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.service-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-right {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+}
+
+.image-fraction:first-child {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid black;
+}
+
+.image-fraction:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.image-half:first-child {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.image-container,
+.square,
+.big-rectangle,
+.tiny,
+.small-rectangle,
+.image-fraction,
+.image-half {
+  overflow: hidden;
+  position: relative;
+}
