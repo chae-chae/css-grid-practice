@@ -1,0 +1,189 @@
+@import "/reset.css";
+
+body {
+  background-color: #150a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.phone {
+  background-color: #c6caca;
+  border-radius: 10px;
+  height: 95%;
+  width: 420px;
+  box-sizing: border-box;
+}
+
+.header__header {
+  width: 100%;
+  height: 10%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__icons {
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu-icon {
+  font-size: 20px;
+}
+
+.contents__column {
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.contents__recommands {
+  background-color: #1f1414;
+  color: #dee2e2;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.recommands__total-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recommands__comment {
+  font-size: 12px;
+}
+
+.merch__column {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.merch {
+  display: grid;
+  height: 330px;
+  grid-template-columns: 210px 210px;
+}
+
+.merch__left-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.merch__info-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.merch__info__name-column {
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.merch__name {
+  font-size: 42px;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+
+.merch__year {
+  font-size: 14px;
+}
+
+.merch__info__stock-column {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 12px;
+}
+
+.stock__size-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.size__spans {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.stock__quantity-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.quantity__spans {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.merch__right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.merch__price-column {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.merch__price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.merch__price-per {
+  font-size: 12px;
+}
+
+.merch__img {
+  width: 200px;
+  height: 240px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: 0px 10px;
+}
