@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmetic Store</title>
   </head>
@@ -10,7 +10,7 @@
     <div class="container">
       <header class="header">
         <div class="header__column">
-          <div class="header__menu">⚙︎</div>
+          <div class="header__menu menu-icon">🎬</div>
           <div class="header__menu">Best Sellers</div>
           <div class="header__menu">Hand Sanitizer</div>
           <div class="header__menu">Hand Cream</div>
@@ -21,13 +21,16 @@
           <div class="header__menu">Toothpaste</div>
           <div class="header__menu">Hand soap</div>
           <div class="header__menu">Combos</div>
-          <div class="header__menu">👤</div>
-          <div class="header__menu">🛍</div>
+          <div class="header__menu menu-icon">👤</div>
+          <div class="header__menu menu-icon">🛍</div>
         </div>
       </header>
-      <section class="address">Home/Catalog/Hand Soap/Sunset Fleur</section>
+      <section class="address">
+        <span class="address__back">Home / Catalog / Hand Soap / </span>
+        <span class="address__current">Sunset Fleur</span>
+      </section>
       <div class="contents__column">
-        <div class="content__img"></div>
+        <img src="https://source.unsplash.com/random" class="content__img" />
         <div class="contents__row">
           <div class="contents__name-row">
             <h3 class="content__spec">HAND SOAP</h3>
