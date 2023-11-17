@@ -1,0 +1,186 @@
+@import "/reset.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 1px solid black;
+  .header__column {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .header__menu {
+      box-sizing: border-box;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid black;
+      font-size: 12px;
+      &:last-child {
+        border: none;
+      }
+    }
+    .menu-icon {
+      font-size: 30px;
+    }
+  }
+  .header__title {
+    box-sizing: border-box;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 20px;
+  }
+}
+
+.address {
+  width: 100%;
+  height: 5%;
+  box-sizing: border-box;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2px 60px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  .address__back {
+    white-space: pre;
+  }
+  .address__current {
+    color: rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+.contents__column {
+  width: 100%;
+  height: 85%;
+  box-sizing: border-box;
+  display: flex;
+  .content__img {
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    object-fit: cover;
+  }
+  .contents__row {
+    box-sizing: border-box;
+    width: 55%;
+    height: 100%;
+    .contents__name-row {
+      box-sizing: border-box;
+      width: 100%;
+      height: 60%;
+      padding: 100px 30px;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      .content__spec {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba($color: #000000, $alpha: 0.8);
+      }
+      .content__title {
+        font-size: 42px;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-bottom: 35px;
+      }
+      .content__buttons-col {
+        box-sizing: border-box;
+        display: flex;
+        gap: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        align-items: center;
+        .content__qt-col {
+          box-sizing: border-box;
+          display: flex;
+          gap: 5px;
+          .qt__min {
+            color: rgba($color: #000000, $alpha: 0.4);
+          }
+        }
+        .content__price {
+        }
+        .content__btn {
+          border: 1px dashed #f08a74;
+          box-sizing: border-box;
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+    .content__des-col {
+      box-sizing: border-box;
+      width: 100%;
+      height: 40%;
+      display: flex;
+      .content__desc {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 30px 50px;
+        font-size: 12px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        .des__subtitle {
+          box-sizing: border-box;
+          margin-bottom: 10px;
+        }
+      }
+      .content__info-row {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 30px 50px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 14px;
+        font-weight: bold;
+        .content__windows-row {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .content__window {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            box-sizing: border-box;
+            padding-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
